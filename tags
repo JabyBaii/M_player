@@ -1,0 +1,264 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BIT	encoding/gb2312_ucs2.c	8;"	d	file:
+CC	xianchen/Makefile	/^CC = gcc  $/;"	m
+CFLAGS	xianchen/Makefile	/^CFLAGS = `pkg-config --cflags --libs gtk+-2.0`$/;"	m
+CListLink	sungtk_interface/sungtk_interface.h	/^}CListLink;$/;"	t	typeref:struct:_clist_link
+EXEC	xianchen/Makefile	/^EXEC = demo$/;"	m
+GET_WIDGET_HEIGHT	sungtk_interface/sungtk_interface.h	8;"	d
+GET_WIDGET_WIDTH	sungtk_interface/sungtk_interface.h	7;"	d
+LRC	LRC/lyrics_process.h	/^}LRC;$/;"	t	typeref:struct:lylics
+LRC_PTR	LRC/lyrics_process.h	/^}LRC_PTR;$/;"	t	typeref:struct:lylics_ptr
+MAINC	xianchen/Makefile	/^MAINC = demo.c$/;"	m
+MAX_UNI_INDEX	encoding/gb2312_ucs2.c	/^const unsigned short MAX_UNI_INDEX = 6808; \/*6768*\/$/;"	v
+MOTIONKEY_NUM	sungtk_interface/sungtk_interface.h	207;"	d
+MUI	player_ui.h	/^}MUI;$/;"	t	typeref:struct:mplayer_ui
+SUNGTK_CLIST	sungtk_interface/sungtk_interface.h	159;"	d
+SunGtkCList	sungtk_interface/sungtk_interface.h	/^}SunGtkCList;$/;"	t	typeref:struct:_sungtk_clist
+SunGtkMotionLockRelease	sungtk_interface/sungtk_interface.h	/^typedef gboolean (*SunGtkMotionLockRelease)(GtkWidget *widget, GdkEventButton *event, gpointer data);$/;"	t
+SunGtkSelectRow	sungtk_interface/sungtk_interface.h	/^typedef gboolean (*SunGtkSelectRow)(GtkWidget *widget, GdkEventButton *event, gpointer data);$/;"	t
+SungtkMotionLock	sungtk_interface/sungtk_interface.h	/^}SungtkMotionLock;$/;"	t	typeref:struct:_motion_lock
+_LYRICS_PROCESS_H_	LRC/lyrics_process.h	2;"	d
+_SUNGTK_INTERFACE_H_	sungtk_interface/sungtk_interface.h	2;"	d
+__GB2312_UCS2_H__	encoding/gb2312_ucs2.h	2;"	d
+__PLAYER_SONG_LIST_H_	player_song_list.h	2;"	d
+__PLAYER_START_H_	player_start.h	2;"	d
+__PLAYER_UI_H_	player_ui.h	2;"	d
+_clist_link	sungtk_interface/sungtk_interface.h	/^typedef struct _clist_link$/;"	s
+_clist_link::event_box	sungtk_interface/sungtk_interface.h	/^	GtkWidget *event_box;	\/\/每一行都有一个事件盒子，用于支持点击$/;"	m	struct:_clist_link	access:public
+_clist_link::label	sungtk_interface/sungtk_interface.h	/^	GtkWidget *label;		\/\/将label放置在事件盒子中，用于显示文字$/;"	m	struct:_clist_link	access:public
+_clist_link::next	sungtk_interface/sungtk_interface.h	/^	struct _clist_link *next;$/;"	m	struct:_clist_link	typeref:struct:_clist_link::_clist_link	access:public
+_motion_lock	sungtk_interface/sungtk_interface.h	/^typedef struct _motion_lock$/;"	s
+_motion_lock::event_box	sungtk_interface/sungtk_interface.h	/^	GtkWidget *event_box;	\/\/滑动事件盒子$/;"	m	struct:_motion_lock	access:public
+_motion_lock::fixed	sungtk_interface/sungtk_interface.h	/^	GtkWidget *fixed;		\/\/事件盒子添加固定布局$/;"	m	struct:_motion_lock	access:public
+_motion_lock::image	sungtk_interface/sungtk_interface.h	/^	GtkWidget *image[MOTIONKEY_NUM];	\/\/图片控件$/;"	m	struct:_motion_lock	access:public
+_motion_lock::img_size	sungtk_interface/sungtk_interface.h	/^	gint img_size;			\/\/每张图片大小$/;"	m	struct:_motion_lock	access:public
+_motion_lock::lock_size	sungtk_interface/sungtk_interface.h	/^	gint lock_size;			\/\/整个滑动锁的大小$/;"	m	struct:_motion_lock	access:public
+_motion_lock::password	sungtk_interface/sungtk_interface.h	/^	gint password[MOTIONKEY_NUM];		\/\/密码记录$/;"	m	struct:_motion_lock	access:public
+_motion_lock::press_pic	sungtk_interface/sungtk_interface.h	/^	gchar *press_pic;		\/\/按下照片路径$/;"	m	struct:_motion_lock	access:public
+_motion_lock::pressed	sungtk_interface/sungtk_interface.h	/^	gint pressed[MOTIONKEY_NUM];		\/\/每个图片是否以按下$/;"	m	struct:_motion_lock	access:public
+_motion_lock::space_size	sungtk_interface/sungtk_interface.h	/^	gint space_size;		\/\/图片间的间距$/;"	m	struct:_motion_lock	access:public
+_motion_lock::start_flag	sungtk_interface/sungtk_interface.h	/^	gint start_flag;		\/\/第一次按下标志位$/;"	m	struct:_motion_lock	access:public
+_motion_lock::unpress_pic	sungtk_interface/sungtk_interface.h	/^	gchar *unpress_pic;		\/\/未按下照片路径$/;"	m	struct:_motion_lock	access:public
+_sungtk_clist	sungtk_interface/sungtk_interface.h	/^typedef struct _sungtk_clist$/;"	s
+_sungtk_clist::callback	sungtk_interface/sungtk_interface.h	/^	SunGtkSelectRow callback;\/\/行点击回调函数$/;"	m	struct:_sungtk_clist	access:public
+_sungtk_clist::col_width	sungtk_interface/sungtk_interface.h	/^	gint col_width;			\/\/每行宽度$/;"	m	struct:_sungtk_clist	access:public
+_sungtk_clist::fixed	sungtk_interface/sungtk_interface.h	/^	GtkWidget *fixed;		\/\/整个列表是一个固定布局$/;"	m	struct:_sungtk_clist	access:public
+_sungtk_clist::font_color	sungtk_interface/sungtk_interface.h	/^	gchar font_color[30];	\/\/字体颜色$/;"	m	struct:_sungtk_clist	access:public
+_sungtk_clist::font_size	sungtk_interface/sungtk_interface.h	/^	gint font_size;			\/\/字体大小$/;"	m	struct:_sungtk_clist	access:public
+_sungtk_clist::head	sungtk_interface/sungtk_interface.h	/^	CListLink *head;$/;"	m	struct:_sungtk_clist	access:public
+_sungtk_clist::row_height	sungtk_interface/sungtk_interface.h	/^	gint row_height;		\/\/每行的高度$/;"	m	struct:_sungtk_clist	access:public
+_sungtk_clist::select_row	sungtk_interface/sungtk_interface.h	/^	gint select_row;		\/\/当前选中行$/;"	m	struct:_sungtk_clist	access:public
+_sungtk_clist::sig_str	sungtk_interface/sungtk_interface.h	/^	gchar sig_str[30];		\/\/信号$/;"	m	struct:_sungtk_clist	access:public
+_sungtk_clist::total_num	sungtk_interface/sungtk_interface.h	/^	gint total_num;			\/\/行总数$/;"	m	struct:_sungtk_clist	access:public
+_sungtk_clist::vbox	sungtk_interface/sungtk_interface.h	/^	GtkWidget *vbox;		\/\/利用垂直布局，可以动态追加行$/;"	m	struct:_sungtk_clist	access:public
+add_lrc_to_link	LRC/lyrics_process.c	/^static LRC *add_lrc_to_link(LRC *head, uint time, char *lrc)$/;"	f	file:	signature:(LRC *head, uint time, char *lrc)
+button_back	player_ui.h	/^	GtkWidget *button_back, *button_pause, *button_next;$/;"	m	struct:mplayer_ui	access:public
+button_next	player_ui.h	/^	GtkWidget *button_back, *button_pause, *button_next;$/;"	m	struct:mplayer_ui	access:public
+button_pause	player_ui.h	/^	GtkWidget *button_back, *button_pause, *button_next;$/;"	m	struct:mplayer_ui	access:public
+calculate_time_label	LRC/lyrics_process.c	/^static uint calculate_time_label(char *label)$/;"	f	file:	signature:(char *label)
+callback	sungtk_interface/sungtk_interface.h	/^	SunGtkSelectRow callback;\/\/行点击回调函数$/;"	m	struct:_sungtk_clist	access:public
+callback_1	player_ui.c	/^void callback_1(GtkButton *button, gpointer arg)\/\/鎸夐敭鍥炶皟鍑芥暟$/;"	f	signature:(GtkButton *button, gpointer arg)
+callback_button_back	player_ui.c	/^void callback_button_back(GtkWidget *button_pause, gpointer data)$/;"	f	signature:(GtkWidget *button_pause, gpointer data)
+callback_button_next	player_ui.c	/^void callback_button_next(GtkWidget *button_pause, gpointer data)$/;"	f	signature:(GtkWidget *button_pause, gpointer data)
+callback_button_pause	player_ui.c	/^void callback_button_pause(GtkWidget *button_pause, gpointer data)$/;"	f	signature:(GtkWidget *button_pause, gpointer data)
+callback_del	player_ui.c	/^void callback_del(GtkButton *button, gpointer arg)\/\/鍒犻櫎閿殑鍥炶皟鍑芥暟$/;"	f	signature:(GtkButton *button, gpointer arg)
+callback_lock_motion_event	sungtk_interface/sungtk_interface.c	/^static inline gboolean callback_lock_motion_event(GtkWidget *widget, GdkEventMotion *event, gpointer data)$/;"	f	file:	signature:(GtkWidget *widget, GdkEventMotion *event, gpointer data)
+callback_lock_press_event	sungtk_interface/sungtk_interface.c	/^static inline gboolean callback_lock_press_event(GtkWidget *widget, GdkEventButton *event, gpointer data)$/;"	f	file:	signature:(GtkWidget *widget, GdkEventButton *event, gpointer data)
+callback_sure	player_ui.c	/^void callback_sure(GtkButton *button, gpointer arg)\/\/纭閿殑鍥炶皟鍑芥暟$/;"	f	signature:(GtkButton *button, gpointer arg)
+cc	Makefile	/^cc = gcc $/;"	m
+cflags	Makefile	/^cflags = `pkg-config --cflags --libs gtk+-2.0` `pkg-config --cflags --libs libglade-2.0` -lpthread $/;"	m
+col_width	sungtk_interface/sungtk_interface.h	/^	gint col_width;			\/\/每行宽度$/;"	m	struct:_sungtk_clist	access:public
+cur_time	player_ui.h	/^	GtkWidget *cur_time;$/;"	m	struct:mplayer_ui	access:public
+deal_thread	xianchen/demo.c	/^gpointer deal_thread(gpointer data)$/;"	f	signature:(gpointer data)
+deal_thread1	xianchen/demo.c	/^gpointer deal_thread1(gpointer data)$/;"	f	signature:(gpointer data)
+dispose_line	LRC/lyrics_process.c	/^static LRC *dispose_line(char *line,LRC *head)$/;"	f	file:	signature:(char *line,LRC *head)
+dispose_lrc	LRC/lyrics_process.c	/^LRC *dispose_lrc(char *name, LRC_PTR *lrc)$/;"	f	signature:(char *name, LRC_PTR *lrc)
+dispose_lrc	LRC/lyrics_process.h	/^extern LRC *dispose_lrc(char *name, LRC_PTR *lrc);$/;"	p	signature:(char *name, LRC_PTR *lrc)
+event_box	sungtk_interface/sungtk_interface.h	/^	GtkWidget *event_box;	\/\/滑动事件盒子$/;"	m	struct:_motion_lock	access:public
+event_box	sungtk_interface/sungtk_interface.h	/^	GtkWidget *event_box;	\/\/每一行都有一个事件盒子，用于支持点击$/;"	m	struct:_clist_link	access:public
+eventbox	player_ui.h	/^	GtkWidget *eventbox[20];$/;"	m	struct:mplayer_ui	access:public
+fixed	sungtk_interface/sungtk_interface.h	/^	GtkWidget *fixed;		\/\/事件盒子添加固定布局$/;"	m	struct:_motion_lock	access:public
+fixed	sungtk_interface/sungtk_interface.h	/^	GtkWidget *fixed;		\/\/整个列表是一个固定布局$/;"	m	struct:_sungtk_clist	access:public
+fixed_list	player_ui.h	/^	GtkWidget *fixed_list;$/;"	m	struct:mplayer_ui	access:public
+flg	player_ui.c	/^int flg = 0;$/;"	v
+font_color	sungtk_interface/sungtk_interface.h	/^	gchar font_color[30];	\/\/字体颜色$/;"	m	struct:_sungtk_clist	access:public
+font_size	sungtk_interface/sungtk_interface.h	/^	gint font_size;			\/\/字体大小$/;"	m	struct:_sungtk_clist	access:public
+free_lrc_arry	LRC/lyrics_process.c	/^void free_lrc_arry(LRC_PTR *lrc)$/;"	f	signature:(LRC_PTR *lrc)
+free_lrc_arry	LRC/lyrics_process.h	/^extern void free_lrc_arry(LRC_PTR *lrc);$/;"	p	signature:(LRC_PTR *lrc)
+gb2312_to_ucs2	encoding/gb2312_ucs2.c	/^unsigned short gb2312_to_ucs2(unsigned short gb2312)$/;"	f	signature:(unsigned short gb2312)
+gb2312_to_ucs2	encoding/gb2312_ucs2.h	/^unsigned short gb2312_to_ucs2(unsigned short gb2312);$/;"	p	signature:(unsigned short gb2312)
+gb2312_to_utf8	encoding/gb2312_ucs2.c	/^unsigned char *gb2312_to_utf8(const unsigned char *gb2312, unsigned char *utf)$/;"	f	signature:(const unsigned char *gb2312, unsigned char *utf)
+gb2312_to_utf8	encoding/gb2312_ucs2.h	/^unsigned char *gb2312_to_utf8(const unsigned char *gb2312, unsigned char *utf);$/;"	p	signature:(const unsigned char *gb2312, unsigned char *utf)
+get_dispose_line	LRC/lyrics_process.c	/^static void get_dispose_line(char *lycris_buf, LRC_PTR *lrc)$/;"	f	file:	signature:(char *lycris_buf, LRC_PTR *lrc)
+get_press_image_num	sungtk_interface/sungtk_interface.c	/^static inline int get_press_image_num(SungtkMotionLock *lock, double press_x, double press_y)$/;"	f	file:	signature:(SungtkMotionLock *lock, double press_x, double press_y)
+get_utf8_nbytes	encoding/gb2312_ucs2.c	/^int get_utf8_nbytes(unsigned char first_char)$/;"	f	signature:(unsigned char first_char)
+get_utf8_nbytes	encoding/gb2312_ucs2.h	/^int get_utf8_nbytes(unsigned char first_char);$/;"	p	signature:(unsigned char first_char)
+gtk_thread_init	xianchen/demo.c	/^void gtk_thread_init(void)$/;"	f	signature:(void)
+gxml	player_ui.h	/^	GladeXML *gxml; $/;"	m	struct:mplayer_ui	access:public
+h_bar	player_ui.h	/^	GtkWidget *h_bar;$/;"	m	struct:mplayer_ui	access:public
+head	sungtk_interface/sungtk_interface.h	/^	CListLink *head;$/;"	m	struct:_sungtk_clist	access:public
+image	sungtk_interface/sungtk_interface.h	/^	GtkWidget *image[MOTIONKEY_NUM];	\/\/图片控件$/;"	m	struct:_motion_lock	access:public
+image_artist	player_ui.h	/^	GtkWidget *image_volume, *image_artist;$/;"	m	struct:mplayer_ui	access:public
+image_volume	player_ui.h	/^	GtkWidget *image_volume, *image_artist;$/;"	m	struct:mplayer_ui	access:public
+img_size	sungtk_interface/sungtk_interface.h	/^	gint img_size;			\/\/每张图片大小$/;"	m	struct:_motion_lock	access:public
+inorder_link	LRC/lyrics_process.c	/^static void inorder_link(LRC_PTR *lrc)$/;"	f	file:	signature:(LRC_PTR *lrc)
+judge_time_label	LRC/lyrics_process.c	/^static char judge_time_label(char *label)$/;"	f	file:	signature:(char *label)
+label	player_ui.h	/^	GtkWidget *label[20];$/;"	m	struct:mplayer_ui	access:public
+label	sungtk_interface/sungtk_interface.h	/^	GtkWidget *label;		\/\/将label放置在事件盒子中，用于显示文字$/;"	m	struct:_clist_link	access:public
+label_singer	player_ui.h	/^	GtkWidget *label_song_name, *label_singer;$/;"	m	struct:mplayer_ui	access:public
+label_song_name	player_ui.h	/^	GtkWidget *label_song_name, *label_singer;$/;"	m	struct:mplayer_ui	access:public
+len_time	player_ui.h	/^	GtkWidget *len_time;$/;"	m	struct:mplayer_ui	access:public
+lock_size	sungtk_interface/sungtk_interface.h	/^	gint lock_size;			\/\/整个滑动锁的大小$/;"	m	struct:_motion_lock	access:public
+lrc	LRC/lyrics_process.h	/^	char lrc[lrc_length];   \/\/歌词$/;"	m	struct:lylics	access:public
+lrc_arry	LRC/lyrics_process.h	/^	LRC **lrc_arry;     \/\/存放链表节点的指针数组的地址$/;"	m	struct:lylics_ptr	access:public
+lrc_arry_size	LRC/lyrics_process.h	/^    uint lrc_arry_size; \/\/指针数组的大小$/;"	m	struct:lylics_ptr	access:public
+lrc_head	LRC/lyrics_process.h	/^	LRC *lrc_head;      \/\/链表首地址$/;"	m	struct:lylics_ptr	access:public
+lrc_length	LRC/lyrics_process.h	7;"	d
+lrc_time_labels	LRC/lyrics_process.h	12;"	d
+lylics	LRC/lyrics_process.h	/^typedef struct lylics$/;"	s
+lylics::lrc	LRC/lyrics_process.h	/^	char lrc[lrc_length];   \/\/歌词$/;"	m	struct:lylics	access:public
+lylics::next	LRC/lyrics_process.h	/^	struct lylics *next;    \/\/下一句歌词$/;"	m	struct:lylics	typeref:struct:lylics::lylics	access:public
+lylics::time	LRC/lyrics_process.h	/^	uint time;              \/\/歌词对应的时间$/;"	m	struct:lylics	access:public
+lylics_ptr	LRC/lyrics_process.h	/^typedef struct lylics_ptr$/;"	s
+lylics_ptr::lrc_arry	LRC/lyrics_process.h	/^	LRC **lrc_arry;     \/\/存放链表节点的指针数组的地址$/;"	m	struct:lylics_ptr	access:public
+lylics_ptr::lrc_arry_size	LRC/lyrics_process.h	/^    uint lrc_arry_size; \/\/指针数组的大小$/;"	m	struct:lylics_ptr	access:public
+lylics_ptr::lrc_head	LRC/lyrics_process.h	/^	LRC *lrc_head;      \/\/链表首地址$/;"	m	struct:lylics_ptr	access:public
+main	main.c	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	xianchen/demo.c	/^int main( int argc, char *argv[] )$/;"	f	signature:( int argc, char *argv[] )
+mplayer	main.c	/^MUI mplayer;$/;"	v
+mplayer	player_ui.c	/^MUI mplayer; $/;"	v
+mplayer_ui	player_ui.h	/^typedef struct mplayer_ui$/;"	s
+mplayer_ui::button_back	player_ui.h	/^	GtkWidget *button_back, *button_pause, *button_next;$/;"	m	struct:mplayer_ui	access:public
+mplayer_ui::button_next	player_ui.h	/^	GtkWidget *button_back, *button_pause, *button_next;$/;"	m	struct:mplayer_ui	access:public
+mplayer_ui::button_pause	player_ui.h	/^	GtkWidget *button_back, *button_pause, *button_next;$/;"	m	struct:mplayer_ui	access:public
+mplayer_ui::cur_time	player_ui.h	/^	GtkWidget *cur_time;$/;"	m	struct:mplayer_ui	access:public
+mplayer_ui::eventbox	player_ui.h	/^	GtkWidget *eventbox[20];$/;"	m	struct:mplayer_ui	access:public
+mplayer_ui::fixed_list	player_ui.h	/^	GtkWidget *fixed_list;$/;"	m	struct:mplayer_ui	access:public
+mplayer_ui::gxml	player_ui.h	/^	GladeXML *gxml; $/;"	m	struct:mplayer_ui	access:public
+mplayer_ui::h_bar	player_ui.h	/^	GtkWidget *h_bar;$/;"	m	struct:mplayer_ui	access:public
+mplayer_ui::image_artist	player_ui.h	/^	GtkWidget *image_volume, *image_artist;$/;"	m	struct:mplayer_ui	access:public
+mplayer_ui::image_volume	player_ui.h	/^	GtkWidget *image_volume, *image_artist;$/;"	m	struct:mplayer_ui	access:public
+mplayer_ui::label	player_ui.h	/^	GtkWidget *label[20];$/;"	m	struct:mplayer_ui	access:public
+mplayer_ui::label_singer	player_ui.h	/^	GtkWidget *label_song_name, *label_singer;$/;"	m	struct:mplayer_ui	access:public
+mplayer_ui::label_song_name	player_ui.h	/^	GtkWidget *label_song_name, *label_singer;$/;"	m	struct:mplayer_ui	access:public
+mplayer_ui::len_time	player_ui.h	/^	GtkWidget *len_time;$/;"	m	struct:mplayer_ui	access:public
+mplayer_ui::song_list	player_ui.h	/^	char *song_list[100];\/\/鑾峰彇姝屾洸鍚嶅瓧$/;"	m	struct:mplayer_ui	access:public
+mplayer_ui::vbox	player_ui.h	/^	GtkWidget *vbox;$/;"	m	struct:mplayer_ui	access:public
+mplayer_ui::window	player_ui.h	/^	GtkWidget *window;$/;"	m	struct:mplayer_ui	access:public
+next	LRC/lyrics_process.h	/^	struct lylics *next;    \/\/下一句歌词$/;"	m	struct:lylics	typeref:struct:lylics::lylics	access:public
+next	sungtk_interface/sungtk_interface.h	/^	struct _clist_link *next;$/;"	m	struct:_clist_link	typeref:struct:_clist_link::_clist_link	access:public
+obj	Makefile	/^obj = $(src:%.c=%.o)$/;"	m
+open_lrc	LRC/lyrics_process.c	/^static char *open_lrc(char *addr)$/;"	f	file:	signature:(char *addr)
+option	Makefile	/^option = -Wall$/;"	m
+password	sungtk_interface/sungtk_interface.h	/^	gint password[MOTIONKEY_NUM];		\/\/密码记录$/;"	m	struct:_motion_lock	access:public
+player_start	player_start.c	/^int player_start(MUI *mplayer)$/;"	f	signature:(MUI *mplayer)
+player_start	player_start.h	/^extern int player_start(MUI *mplayer);$/;"	p	signature:(MUI *mplayer)
+player_ui	player_ui.c	/^int player_ui(MUI *mplayer)$/;"	f	signature:(MUI *mplayer)
+player_ui	player_ui.h	/^extern int player_ui(MUI *mplayer);$/;"	p	signature:(MUI *mplayer)
+press_pic	sungtk_interface/sungtk_interface.h	/^	gchar *press_pic;		\/\/按下照片路径$/;"	m	struct:_motion_lock	access:public
+pressed	sungtk_interface/sungtk_interface.h	/^	gint pressed[MOTIONKEY_NUM];		\/\/每个图片是否以按下$/;"	m	struct:_motion_lock	access:public
+print_lrc_link	LRC/lyrics_process.c	/^void print_lrc_link(LRC_PTR lrc)$/;"	f	signature:(LRC_PTR lrc)
+print_lrc_link	LRC/lyrics_process.h	/^extern void print_lrc_link(LRC_PTR lrc);$/;"	p	signature:(LRC_PTR lrc)
+radix_table	encoding/gb2312_ucs2.c	/^static const char radix_table[] = "0123456789ABCDEF";$/;"	v	file:
+read_song_dir	player_song_list.c	/^int read_song_dir(MUI *player)$/;"	f	signature:(MUI *player)
+read_song_dir	player_song_list.h	/^extern int read_song_dir(MUI *player);$/;"	p	signature:(MUI *player)
+row_height	sungtk_interface/sungtk_interface.h	/^	gint row_height;		\/\/每行的高度$/;"	m	struct:_sungtk_clist	access:public
+select_row	sungtk_interface/sungtk_interface.h	/^	gint select_row;		\/\/当前选中行$/;"	m	struct:_sungtk_clist	access:public
+sig_str	sungtk_interface/sungtk_interface.h	/^	gchar sig_str[30];		\/\/信号$/;"	m	struct:_sungtk_clist	access:public
+song_list	player_ui.h	/^	char *song_list[100];\/\/鑾峰彇姝屾洸鍚嶅瓧$/;"	m	struct:mplayer_ui	access:public
+space_size	sungtk_interface/sungtk_interface.h	/^	gint space_size;		\/\/图片间的间距$/;"	m	struct:_motion_lock	access:public
+start_flag	sungtk_interface/sungtk_interface.h	/^	gint start_flag;		\/\/第一次按下标志位$/;"	m	struct:_motion_lock	access:public
+str_to_utf8	encoding/gb2312_ucs2.h	/^char *str_to_utf8(char *psrc, char *utf8);$/;"	p	signature:(char *psrc, char *utf8)
+sungtk_background_set_picture	sungtk_interface/sungtk_interface.c	/^int sungtk_background_set_picture(GtkWidget *widget, const gchar *path, const int w, const int h)$/;"	f	signature:(GtkWidget *widget, const gchar *path, const int w, const int h)
+sungtk_background_set_picture	sungtk_interface/sungtk_interface.h	/^extern int sungtk_background_set_picture(GtkWidget *widget, const gchar *path, const int w, const int h);$/;"	p	signature:(GtkWidget *widget, const gchar *path, const int w, const int h)
+sungtk_button_inset_image	sungtk_interface/sungtk_interface.c	/^GtkWidget *sungtk_button_inset_image(GtkWidget *button, const gchar *file_path, const int w, const int h)$/;"	f	signature:(GtkWidget *button, const gchar *file_path, const int w, const int h)
+sungtk_button_inset_image	sungtk_interface/sungtk_interface.h	/^extern GtkWidget *sungtk_button_inset_image(GtkWidget *button, const gchar *file_path, const int w, const int h);$/;"	p	signature:(GtkWidget *button, const gchar *file_path, const int w, const int h)
+sungtk_button_new_with_image	sungtk_interface/sungtk_interface.c	/^GtkWidget *sungtk_button_new_with_image(const char *file_path, const int w, const int h)$/;"	f	signature:(const char *file_path, const int w, const int h)
+sungtk_button_new_with_image	sungtk_interface/sungtk_interface.h	/^extern GtkWidget *sungtk_button_new_with_image(const char *file_path, const int w, const int h);$/;"	p	signature:(const char *file_path, const int w, const int h)
+sungtk_button_new_with_label_and_image	sungtk_interface/sungtk_interface.c	/^GtkWidget *sungtk_button_new_with_label_and_image(const char *file, const char *label, const int w, const int h)$/;"	f	signature:(const char *file, const char *label, const int w, const int h)
+sungtk_button_new_with_label_and_image	sungtk_interface/sungtk_interface.h	/^extern GtkWidget *sungtk_button_new_with_label_and_image(const char *file, const char *label, const int w, const int h);$/;"	p	signature:(const char *file, const char *label, const int w, const int h)
+sungtk_button_set_image	sungtk_interface/sungtk_interface.c	/^int sungtk_button_set_image(GtkWidget *button, const gchar *file_path, const int w, const int h)$/;"	f	signature:(GtkWidget *button, const gchar *file_path, const int w, const int h)
+sungtk_button_set_image	sungtk_interface/sungtk_interface.h	/^extern int sungtk_button_set_image(GtkWidget *button, const gchar *file_path, const int w, const int h);$/;"	p	signature:(GtkWidget *button, const gchar *file_path, const int w, const int h)
+sungtk_clist_append	sungtk_interface/sungtk_interface.c	/^int sungtk_clist_append(SunGtkCList *clist, const gchar *text)$/;"	f	signature:(SunGtkCList *clist, const gchar *text)
+sungtk_clist_append	sungtk_interface/sungtk_interface.h	/^extern int sungtk_clist_append(SunGtkCList *clist, const gchar *text);$/;"	p	signature:(SunGtkCList *clist, const gchar *text)
+sungtk_clist_get_row_data	sungtk_interface/sungtk_interface.c	/^const gchar *sungtk_clist_get_row_data(SunGtkCList *clist, gint row)$/;"	f	signature:(SunGtkCList *clist, gint row)
+sungtk_clist_get_row_data	sungtk_interface/sungtk_interface.h	/^extern const gchar *sungtk_clist_get_row_data(SunGtkCList *clist, gint row);$/;"	p	signature:(SunGtkCList *clist, gint row)
+sungtk_clist_new	sungtk_interface/sungtk_interface.c	/^SunGtkCList *sungtk_clist_new()$/;"	f
+sungtk_clist_new	sungtk_interface/sungtk_interface.h	/^extern SunGtkCList *sungtk_clist_new();$/;"	p	signature:()
+sungtk_clist_select_row	sungtk_interface/sungtk_interface.c	/^int sungtk_clist_select_row(SunGtkCList *clist, gint row, const gchar *color_buf)$/;"	f	signature:(SunGtkCList *clist, gint row, const gchar *color_buf)
+sungtk_clist_select_row	sungtk_interface/sungtk_interface.h	/^extern int sungtk_clist_select_row(SunGtkCList *clist, gint row, const gchar *color_buf);$/;"	p	signature:(SunGtkCList *clist, gint row, const gchar *color_buf)
+sungtk_clist_set_col_width	sungtk_interface/sungtk_interface.c	/^int sungtk_clist_set_col_width(SunGtkCList *clist, gint width)$/;"	f	signature:(SunGtkCList *clist, gint width)
+sungtk_clist_set_col_width	sungtk_interface/sungtk_interface.h	/^extern int sungtk_clist_set_col_width(SunGtkCList *clist, gint width);$/;"	p	signature:(SunGtkCList *clist, gint width)
+sungtk_clist_set_foreground	sungtk_interface/sungtk_interface.c	/^int sungtk_clist_set_foreground(SunGtkCList *clist, const gchar *color_buf)$/;"	f	signature:(SunGtkCList *clist, const gchar *color_buf)
+sungtk_clist_set_foreground	sungtk_interface/sungtk_interface.h	/^extern int sungtk_clist_set_foreground(SunGtkCList *clist, const gchar *color_buf);$/;"	p	signature:(SunGtkCList *clist, const gchar *color_buf)
+sungtk_clist_set_label_color	sungtk_interface/sungtk_interface.c	/^static void sungtk_clist_set_label_color(GtkWidget *label, const char *color_buf)$/;"	f	file:	signature:(GtkWidget *label, const char *color_buf)
+sungtk_clist_set_label_size	sungtk_interface/sungtk_interface.c	/^static void sungtk_clist_set_label_size(GtkWidget *label, const gint size)$/;"	f	file:	signature:(GtkWidget *label, const gint size)
+sungtk_clist_set_position_in_fixed	sungtk_interface/sungtk_interface.c	/^void sungtk_clist_set_position_in_fixed(SunGtkCList *clist, gint x, gint y)$/;"	f	signature:(SunGtkCList *clist, gint x, gint y)
+sungtk_clist_set_position_in_fixed	sungtk_interface/sungtk_interface.h	/^extern void sungtk_clist_set_position_in_fixed(SunGtkCList *clist, gint x, gint y);$/;"	p	signature:(SunGtkCList *clist, gint x, gint y)
+sungtk_clist_set_row_color	sungtk_interface/sungtk_interface.c	/^int sungtk_clist_set_row_color(SunGtkCList *clist, gint row, const gchar *color_buf)$/;"	f	signature:(SunGtkCList *clist, gint row, const gchar *color_buf)
+sungtk_clist_set_row_color	sungtk_interface/sungtk_interface.h	/^extern int sungtk_clist_set_row_color(SunGtkCList *clist, gint row, const gchar *color_buf);$/;"	p	signature:(SunGtkCList *clist, gint row, const gchar *color_buf)
+sungtk_clist_set_row_data	sungtk_interface/sungtk_interface.c	/^int sungtk_clist_set_row_data(SunGtkCList *clist, gint row, const gchar *text)$/;"	f	signature:(SunGtkCList *clist, gint row, const gchar *text)
+sungtk_clist_set_row_data	sungtk_interface/sungtk_interface.h	/^extern int sungtk_clist_set_row_data(SunGtkCList *clist, gint row, const gchar *text);$/;"	p	signature:(SunGtkCList *clist, gint row, const gchar *text)
+sungtk_clist_set_row_height	sungtk_interface/sungtk_interface.c	/^int sungtk_clist_set_row_height(SunGtkCList *clist, gint height)$/;"	f	signature:(SunGtkCList *clist, gint height)
+sungtk_clist_set_row_height	sungtk_interface/sungtk_interface.h	/^extern int sungtk_clist_set_row_height(SunGtkCList *clist, gint height);$/;"	p	signature:(SunGtkCList *clist, gint height)
+sungtk_clist_set_select_row_signal	sungtk_interface/sungtk_interface.c	/^int sungtk_clist_set_select_row_signal(SunGtkCList *clist, const gchar *detailed_signal, SunGtkSelectRow callback)$/;"	f	signature:(SunGtkCList *clist, const gchar *detailed_signal, SunGtkSelectRow callback)
+sungtk_clist_set_select_row_signal	sungtk_interface/sungtk_interface.h	/^extern int sungtk_clist_set_select_row_signal(SunGtkCList *clist, const gchar *detailed_signal, SunGtkSelectRow callback);$/;"	p	signature:(SunGtkCList *clist, const gchar *detailed_signal, SunGtkSelectRow callback)
+sungtk_clist_set_text_size	sungtk_interface/sungtk_interface.c	/^int sungtk_clist_set_text_size(SunGtkCList *clist, int size)$/;"	f	signature:(SunGtkCList *clist, int size)
+sungtk_clist_set_text_size	sungtk_interface/sungtk_interface.h	/^extern int sungtk_clist_set_text_size(SunGtkCList *clist, int size);$/;"	p	signature:(SunGtkCList *clist, int size)
+sungtk_clist_unref	sungtk_interface/sungtk_interface.c	/^int sungtk_clist_unref(SunGtkCList *clist)$/;"	f	signature:(SunGtkCList *clist)
+sungtk_clist_unref	sungtk_interface/sungtk_interface.h	/^extern int sungtk_clist_unref(SunGtkCList *clist);$/;"	p	signature:(SunGtkCList *clist)
+sungtk_color_get	sungtk_interface/sungtk_interface.c	/^int sungtk_color_get(const char *color_buf, GdkColor *color)$/;"	f	signature:(const char *color_buf, GdkColor *color)
+sungtk_color_get	sungtk_interface/sungtk_interface.h	/^extern int sungtk_color_get(const char *color_buf, GdkColor *color);$/;"	p	signature:(const char *color_buf, GdkColor *color)
+sungtk_image_load_picture	sungtk_interface/sungtk_interface.c	/^int sungtk_image_load_picture(GtkWidget *image, const char *file_path, const int w, const int h )$/;"	f	signature:(GtkWidget *image, const char *file_path, const int w, const int h )
+sungtk_image_load_picture	sungtk_interface/sungtk_interface.h	/^extern int sungtk_image_load_picture(GtkWidget *image, const char *file_path, const int w, const int h );$/;"	p	signature:(GtkWidget *image, const char *file_path, const int w, const int h )
+sungtk_image_new_from_file	sungtk_interface/sungtk_interface.c	/^GtkWidget *sungtk_image_new_from_file(const char *file_path, const int w, const int h)$/;"	f	signature:(const char *file_path, const int w, const int h)
+sungtk_image_new_from_file	sungtk_interface/sungtk_interface.h	/^GtkWidget *sungtk_image_new_from_file(const char *file_path, const int w, const int h);$/;"	p	signature:(const char *file_path, const int w, const int h)
+sungtk_motion_lock_board_init	sungtk_interface/sungtk_interface.c	/^static void sungtk_motion_lock_board_init(SungtkMotionLock *lock)$/;"	f	file:	signature:(SungtkMotionLock *lock)
+sungtk_motion_lock_get_password	sungtk_interface/sungtk_interface.c	/^void sungtk_motion_lock_get_password(SungtkMotionLock *lock, char *pwd, int size)$/;"	f	signature:(SungtkMotionLock *lock, char *pwd, int size)
+sungtk_motion_lock_get_password	sungtk_interface/sungtk_interface.h	/^extern void sungtk_motion_lock_get_password(SungtkMotionLock *lock, char *pwd, int size);$/;"	p	signature:(SungtkMotionLock *lock, char *pwd, int size)
+sungtk_motion_lock_new	sungtk_interface/sungtk_interface.c	/^SungtkMotionLock *sungtk_motion_lock_new(gint lock_size, gint img_size, const gchar *press_pic, const gchar *unpress_pic)$/;"	f	signature:(gint lock_size, gint img_size, const gchar *press_pic, const gchar *unpress_pic)
+sungtk_motion_lock_new	sungtk_interface/sungtk_interface.h	/^extern SungtkMotionLock *sungtk_motion_lock_new(gint lock_size, gint img_size, const gchar *press_pic, const gchar *unpress_pic);$/;"	p	signature:(gint lock_size, gint img_size, const gchar *press_pic, const gchar *unpress_pic)
+sungtk_motion_lock_release_deal	sungtk_interface/sungtk_interface.c	/^void sungtk_motion_lock_release_deal(SungtkMotionLock *lock)$/;"	f	signature:(SungtkMotionLock *lock)
+sungtk_motion_lock_release_deal	sungtk_interface/sungtk_interface.h	/^extern void sungtk_motion_lock_release_deal(SungtkMotionLock *lock);$/;"	p	signature:(SungtkMotionLock *lock)
+sungtk_motion_lock_show_board	sungtk_interface/sungtk_interface.c	/^static inline void sungtk_motion_lock_show_board(SungtkMotionLock *lock)$/;"	f	file:	signature:(SungtkMotionLock *lock)
+sungtk_motion_lock_show_button	sungtk_interface/sungtk_interface.c	/^static inline void sungtk_motion_lock_show_button(SungtkMotionLock *lock, int num)$/;"	f	file:	signature:(SungtkMotionLock *lock, int num)
+sungtk_motion_lock_signal_release	sungtk_interface/sungtk_interface.c	/^void sungtk_motion_lock_signal_release(SungtkMotionLock *lock, SunGtkMotionLockRelease callback_release)$/;"	f	signature:(SungtkMotionLock *lock, SunGtkMotionLockRelease callback_release)
+sungtk_motion_lock_signal_release	sungtk_interface/sungtk_interface.h	/^extern void sungtk_motion_lock_signal_release(SungtkMotionLock *lock, SunGtkMotionLockRelease callback_release);$/;"	p	signature:(SungtkMotionLock *lock, SunGtkMotionLockRelease callback_release)
+sungtk_motion_lock_unref	sungtk_interface/sungtk_interface.c	/^void sungtk_motion_lock_unref(SungtkMotionLock *lock)$/;"	f	signature:(SungtkMotionLock *lock)
+sungtk_motion_lock_unref	sungtk_interface/sungtk_interface.h	/^extern void sungtk_motion_lock_unref(SungtkMotionLock *lock);$/;"	p	signature:(SungtkMotionLock *lock)
+sungtk_remember_password	sungtk_interface/sungtk_interface.c	/^static inline void sungtk_remember_password(SungtkMotionLock *lock, int num)$/;"	f	file:	signature:(SungtkMotionLock *lock, int num)
+sungtk_scrolled_window_new	sungtk_interface/sungtk_interface.c	/^GtkWidget *sungtk_scrolled_window_new(void)$/;"	f	signature:(void)
+sungtk_scrolled_window_new	sungtk_interface/sungtk_interface.h	/^extern GtkWidget *sungtk_scrolled_window_new(void);$/;"	p	signature:(void)
+sungtk_scrolled_window_set_hadjustment_value	sungtk_interface/sungtk_interface.c	/^int sungtk_scrolled_window_set_hadjustment_value(GtkWidget *s_window, const gdouble add_val)$/;"	f	signature:(GtkWidget *s_window, const gdouble add_val)
+sungtk_scrolled_window_set_hadjustment_value	sungtk_interface/sungtk_interface.h	/^extern int sungtk_scrolled_window_set_hadjustment_value(GtkWidget *s_window, const gdouble add_val);$/;"	p	signature:(GtkWidget *s_window, const gdouble add_val)
+sungtk_scrolled_window_set_vadjustment_value	sungtk_interface/sungtk_interface.c	/^int sungtk_scrolled_window_set_vadjustment_value(GtkWidget *s_window, const gdouble add_val)$/;"	f	signature:(GtkWidget *s_window, const gdouble add_val)
+sungtk_scrolled_window_set_vadjustment_value	sungtk_interface/sungtk_interface.h	/^extern int sungtk_scrolled_window_set_vadjustment_value(GtkWidget *s_window, const gdouble add_val);$/;"	p	signature:(GtkWidget *s_window, const gdouble add_val)
+sungtk_widget_set_font_color	sungtk_interface/sungtk_interface.c	/^int sungtk_widget_set_font_color(GtkWidget *widget, const char *color_buf, gboolean is_button)$/;"	f	signature:(GtkWidget *widget, const char *color_buf, gboolean is_button)
+sungtk_widget_set_font_color	sungtk_interface/sungtk_interface.h	/^extern int sungtk_widget_set_font_color(GtkWidget *widget, const char *color_buf, gboolean is_button);$/;"	p	signature:(GtkWidget *widget, const char *color_buf, gboolean is_button)
+sungtk_widget_set_font_size	sungtk_interface/sungtk_interface.c	/^int sungtk_widget_set_font_size(GtkWidget *widget, int size, gboolean is_button)$/;"	f	signature:(GtkWidget *widget, int size, gboolean is_button)
+sungtk_widget_set_font_size	sungtk_interface/sungtk_interface.h	/^extern int sungtk_widget_set_font_size(GtkWidget *widget, int size, gboolean is_button);$/;"	p	signature:(GtkWidget *widget, int size, gboolean is_button)
+target	Makefile	/^target = ..\/execute\/play$/;"	m
+time	LRC/lyrics_process.h	/^	uint time;              \/\/歌词对应的时间$/;"	m	struct:lylics	access:public
+total_num	sungtk_interface/sungtk_interface.h	/^	gint total_num;			\/\/行总数$/;"	m	struct:_sungtk_clist	access:public
+uchar	LRC/lyrics_process.h	/^typedef unsigned char uchar;$/;"	t
+uchar	encoding/gb2312_ucs2.c	/^typedef unsigned char uchar;$/;"	t	file:
+ucs2_gb2312_table	encoding/gb2312_ucs2.c	/^static const unsigned short ucs2_gb2312_table[][2];$/;"	v	file:
+ucs2_gb2312_table	encoding/gb2312_ucs2.c	/^static const unsigned short ucs2_gb2312_table[][2]={$/;"	v	file:
+ucs2_to_gb2312	encoding/gb2312_ucs2.c	/^unsigned short ucs2_to_gb2312(unsigned short ucs2)$/;"	f	signature:(unsigned short ucs2)
+ucs2_to_gb2312	encoding/gb2312_ucs2.h	/^unsigned short ucs2_to_gb2312(unsigned short ucs2);$/;"	p	signature:(unsigned short ucs2)
+uint	LRC/lyrics_process.h	/^typedef unsigned int uint;$/;"	t
+unpress_pic	sungtk_interface/sungtk_interface.h	/^	gchar *unpress_pic;		\/\/未按下照片路径$/;"	m	struct:_motion_lock	access:public
+utf8_to_gb2312	encoding/gb2312_ucs2.c	/^unsigned char *utf8_to_gb2312(const unsigned char *utf, unsigned char *gb2312)$/;"	f	signature:(const unsigned char *utf, unsigned char *gb2312)
+utf8_to_gb2312	encoding/gb2312_ucs2.h	/^unsigned char *utf8_to_gb2312(const unsigned char *utf, unsigned char *gb2312);$/;"	p	signature:(const unsigned char *utf, unsigned char *gb2312)
+utf8_to_ucs2	encoding/gb2312_ucs2.c	/^int utf8_to_ucs2(const char *utf8)$/;"	f	signature:(const char *utf8)
+utf8_to_ucs2	encoding/gb2312_ucs2.h	/^int utf8_to_ucs2(const char *utf8);$/;"	p	signature:(const char *utf8)
+utf8str_to_ucs2str	encoding/gb2312_ucs2.c	/^char *utf8str_to_ucs2str(char *dest, char *source)$/;"	f	signature:(char *dest, char *source)
+utf8str_to_ucs2str	encoding/gb2312_ucs2.h	/^char *utf8str_to_ucs2str(char *dest, char *source);$/;"	p	signature:(char *dest, char *source)
+vbox	player_ui.h	/^	GtkWidget *vbox;$/;"	m	struct:mplayer_ui	access:public
+vbox	sungtk_interface/sungtk_interface.h	/^	GtkWidget *vbox;		\/\/利用垂直布局，可以动态追加行$/;"	m	struct:_sungtk_clist	access:public
+window	player_ui.h	/^	GtkWidget *window;$/;"	m	struct:mplayer_ui	access:public
